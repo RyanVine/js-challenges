@@ -43,7 +43,7 @@ describe("Testing createRecipeString()", () => {
   });
 });
 
-xdescribe("Testing getFirstAndLastItems()", () => {
+describe("Testing getFirstAndLastItems()", () => {
   it("Should be defined", () => {
     expect(getFirstAndLastItems(coaches)).toBeDefined();
   });
@@ -58,7 +58,7 @@ xdescribe("Testing getFirstAndLastItems()", () => {
   });
 });
 
-xdescribe("Testing totalScores()", () => {
+describe("Testing totalScores()", () => {
   it("Should be defined", () => {
     expect(totalScores(scores)).toBeDefined();
   });

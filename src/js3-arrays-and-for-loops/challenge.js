@@ -21,8 +21,21 @@
  * @return {string} "Bacon+Lettuce+Tomato"
  */
 
+
 export const createRecipeString = (ingredientsArr) => {
-  return;
+  // let recipeString = "";
+
+  // for (let index = 0; index < ingredientsArr.length; index++) {
+  //   if ( index === ingredientsArr.length - 1) {
+  //     recipeString += ingredientsArr[index];
+  //   } else {
+  //   recipeString += ingredientsArr[index] + "+"
+  //   }
+  // }
+  // return recipeString;
+  // or 
+  return ingredientsArr.join("+");
+
 };
 
 /**
@@ -33,7 +46,11 @@ export const createRecipeString = (ingredientsArr) => {
  */
 
 export const getFirstAndLastItems = (itemsArr) => {
-  return;
+  const firstItem = itemsArr[0];
+  const lastItem = itemsArr[itemsArr.length - 1];
+  const newArray = [firstItem, lastItem]
+
+  return newArray;
 };
 
 /**
@@ -44,7 +61,10 @@ export const getFirstAndLastItems = (itemsArr) => {
  */
 
 export const totalScores = (scoreArr) => {
-  return;
+  for (let i = 0; i < scoreArr.length; i++) {
+    result += scoreArr[i];
+   }
+  return result;
 };
 
 /**
