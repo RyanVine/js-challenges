@@ -81,7 +81,7 @@ describe("Testing totalScores()", () => {
   });
 });
 
-xdescribe("Testing totalRange()", () => {
+describe("Testing totalRange()", () => {
   it("Should be defined", () => {
     expect(totalRange(10)).toBeDefined();
   });

@@ -61,10 +61,11 @@ export const getFirstAndLastItems = (itemsArr) => {
  */
 
 export const totalScores = (scoreArr) => {
-  for (let i = 0; i < scoreArr.length; i++) {
-    result += scoreArr[i];
-   }
-  return result;
+  let total = 0;
+  for (let index = 0; index < scoreArr.length; index++) {
+    total += scoreArr[index];
+  }
+  return total;
 };
 
 /**
@@ -79,8 +80,12 @@ export const totalScores = (scoreArr) => {
  * @return {number} 55
  */
 
-export const totalRange = (rangeMax) => {
-  return;
+ export const totalRange = (rangeMax) => {
+  let total = 0;
+  for (let index = 0; index <= rangeMax; index++) {
+    total += index;
+  }
+  return total;
 };
 
 /**

@@ -49,7 +49,7 @@ describe("Testing removeFalseValues()", () => {
   });
 });
 
-xdescribe("Testing createPercentageList()", () => {
+describe("Testing createPercentageList()", () => {
   it("Should return an array", () => {
     expect(Array.isArray(createPercentageList(toBePercentages))).toBe(true);
   });
@@ -70,7 +70,7 @@ xdescribe("Testing createPercentageList()", () => {
   });
 });
 
-xdescribe("Testing createListOfPoessessions()", () => {
+describe("Testing createListOfPoessessions()", () => {
   it("Should return an array", () => {
     expect(Array.isArray(createListOfPoessessions(possessions, "Matt's"))).toBe(true);
   });
