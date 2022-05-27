@@ -36,9 +36,10 @@ export const totalScoresArr = (scoresArr) => {
  */
 
 export const reverseString = (toReverse) => {
-  const strArray = toReverse.toString;
-  const result = strArray.reverseString
-  return result;
+  const strArray = toReverse.split("");
+  const reversedArray = strArray.reverse();
+  const result = reversedArray.join("");
+  return result.toString();
 };
 
 /**
@@ -51,7 +52,9 @@ export const reverseString = (toReverse) => {
  */
 
 export const sortCharactersAlphabetically = (charcterArr) => {
-  return;
+  const lowercaseArr = charcterArr.map((character) => character.toLowerCase());
+  const sortedArr =  lowercaseArr.sort();
+  return sortedArr
 };
 
 /**
