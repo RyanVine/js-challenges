@@ -57,7 +57,7 @@ export class Alert {
   printMessage() {
     return;
   }
-}
+} 
 
 /**
  * Complete the Skeleton of a Loader Class below.

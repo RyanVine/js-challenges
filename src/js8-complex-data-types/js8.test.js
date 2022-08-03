@@ -216,7 +216,7 @@ describe("Intermediate level challenges", () => {
   });
 });
 
-describe("getImportantKeys() tests", () => {
+xdescribe("getImportantKeys() tests", () => {
   const mealsArr = [
     {
       id: 10,

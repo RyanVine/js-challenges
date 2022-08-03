@@ -94,7 +94,7 @@ describe("Testing sortCharactersAlphabetically()", () => {
 
 });
 
-xdescribe("Testing sortNumbersHighToLow()", () => {
+describe("Testing sortNumbersHighToLow()", () => {
   const lowToHigh = Array(50)
     .fill(1)
     .map((number, index) => (number += index));
@@ -133,7 +133,7 @@ xdescribe("Testing sortNumbersHighToLow()", () => {
 
 });
 
-xdescribe("Testing checkItemInstock()", () => {
+describe("Testing checkItemInstock()", () => {
   const stockList = [
     "apple",
     "banana",

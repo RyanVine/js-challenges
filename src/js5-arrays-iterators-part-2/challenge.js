@@ -23,7 +23,7 @@
 
 export const totalScoresArr = (scoresArr) => {
   const result = scoresArr.reduce((a, b) => a + b, 0);
-  return result; 
+  return result;
 };
 
 /**
@@ -53,8 +53,8 @@ export const reverseString = (toReverse) => {
 
 export const sortCharactersAlphabetically = (charcterArr) => {
   const lowercaseArr = charcterArr.map((character) => character.toLowerCase());
-  const sortedArr =  lowercaseArr.sort();
-  return sortedArr
+  const sortedArr = lowercaseArr.sort();
+  return sortedArr;
 };
 
 /**
@@ -69,7 +69,11 @@ export const sortCharactersAlphabetically = (charcterArr) => {
  */
 
 export const sortNumbersHighToLow = (numberArr) => {
-  return;
+  const sortedArray = numberArr
+    .slice()
+    .sort((a, b) => a - b)
+    .reverse();
+  return sortedArray;
 };
 
 /**
@@ -100,7 +104,13 @@ export const checkItemInstock = (toCheck) => {
     "blueberry",
     "melon",
   ];
-  return;
+  if (stockList.includes(toCheck)) {
+    return `${toCheck} is instock, it is on aisle ${stockList.indexOf(
+      toCheck
+    )}.`;
+  } else {
+    return `Sorry ${toCheck} is not instock.`;
+  }
 };
 
 /**
@@ -114,7 +124,9 @@ export const checkItemInstock = (toCheck) => {
  */
 
 export const checkPrimaryColours = (coloursArr) => {
-  return;
+const primaryColours = ["red", "blue", "yellow"]
+const colourCheck = coloursArr.every((colour) => primaryColours.includes(colour));
+  return colourCheck;
 };
 
 /**
